@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Valentine's Ride with Chaand</title>
+    <style>
+        /* Overall body style */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff0066, #ff3399);
+            height: 100vh;
+            color: white;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            animation: fadeIn 5s ease-out;
+        }
+
+        /* Fade in animation for the entire page */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Container for the romantic ride */
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            position: relative;
+            z-index: 10;
+        }
+
+        h1 {
+            font-size: 60px;
+            color: #fff;
+            animation: bounceIn 3s ease-in-out;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        /* Bounce In animation for heading */
+        @keyframes bounceIn {
+            0% { opacity: 0; transform: translateY(-50px); }
+            60% { opacity: 1; transform: translateY(0); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .content {
+            font-size: 22px;
+            line-height: 1.6;
+            margin-top: 20px;
+            animation: slideUp 3s ease-out;
+        }
+
+        /* Slide up animation for content */
+        @keyframes slideUp {
+            0% { opacity: 0; transform: translateY(50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .heart {
+            font-size: 120px;
+            color: red;
+            animation: heartbeat 1.5s infinite alternate;
+            margin-top: 30px;
+        }
+
+        /* Heartbeat animation effect */
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        /* Button to scroll or interact with page */
+        .cta-button {
+            padding: 15px 30px;
+            background-color: #ff66b2;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 40px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #ff3385;
+        }
+
+        /* Decorative stars in background */
+        .stars {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/stardust.png');
+            opacity: 0.1;
+        }
+
+        /* Section styling for love letters */
+        .love-letter {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            margin-top: 40px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .love-letter h2 {
+            font-size: 30px;
+            color: #ff66b2;
+            margin-bottom: 20px;
+        }
+
+        .love-letter p {
+            font-size: 22px;
+            color: #fff;
+        }
+
+        /* Heart Animation in corner */
+        .heart-corner {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 100px;
+            animation: floatHeart 3s ease-in-out infinite;
+        }
+
+        @keyframes floatHeart {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        /* Balloon Animation */
+        .balloon {
+            position: absolute;
+            bottom: -150px;
+            width: 50px;
+            height: 70px;
+            background-color: #ff3366;
+            border-radius: 50%;
+            animation: floatBalloon 6s infinite;
+        }
+
+        /* Balloon floating animation */
+        @keyframes floatBalloon {
+            0% { bottom: -150px; left: 50%; }
+            25% { left: 30%; bottom: 200px; }
+            50% { left: 60%; bottom: 400px; }
+            75% { left: 40%; bottom: 200px; }
+            100% { bottom: -150px; left: 50%; }
+        }
+
+        .balloon1 { animation-delay: 0s; }
+        .balloon2 { animation-delay: 1s; }
+        .balloon3 { animation-delay: 2s; }
+        .balloon4 { animation-delay: 3s; }
+        .balloon5 { animation-delay: 4s; }
+
+    </style>
+</head>
+<body>
+    <div class="stars"></div>
+
+    <div class="container">
+        <h1>My Valentine's Ride with Chaand 💖</h1>
+
+        <!-- Heart Animation -->
+        <div class="heart">❤️</div>
+
+        <div class="content">
+            <p>Heyyy my Valentine, Chaand! ❤️</p>
+            <p>You have brought so much joy and peace into my life, and every moment with you feels like a blessing. Every time I hear your voice, my heart skips a beat, and every time I see you smile, my world lights up.</p>
+            <p>I’m forever grateful for your presence. You give me hope, strength, and love like I’ve never known before. With you by my side, I know that no challenge is too big, no dream is too far. Together, we will make every moment magical.</p>
+            <p>Our journey is just beginning, and I can’t wait to see where it takes us. Let’s fill our future with love, adventures, laughter, and endless memories. I want more moments with you, more love, more fun, and more happiness, now and forever. I love you, Chaand, with all my heart. 💕</p>
+        </div>
+
+        <!-- Love Letter Section -->
+        <div class="love-letter">
+            <h2>A Love Letter To You:</h2>
+            <p>There are so many things I wish I could say to you. Every word, every thought, feels like it falls short in comparison to the immense feelings I have for you. But I’ll try to capture just a little of it here, in this letter.</p>
+            <p>I want you to know that you are my world. You make everything better—just by being you. No matter where life takes us, I promise to always be by your side, supporting you, loving you, and cherishing you like the precious soul you are.</p>
+            <p>You make me believe in love all over again, Chaand. Thank you for being my strength, my peace, and my joy. Here’s to forever, my love. ❤️</p>
+        </div>
+
+        <!-- Call to Action Button (Optional) -->
+        <button class="cta-button" onclick="alert('Let’s go on our next adventure!')">Let’s Ride This Journey Together</button>
+    </div>
+
+    <!-- Floating Heart in Corner -->
+    <div class="heart-corner">❤️</div>
+
+    <!-- Balloon Animations -->
+    <div class="balloon balloon1"></div>
+    <div class="balloon balloon2"></div>
+    <div class="balloon balloon3"></div>
+    <div class="balloon balloon4"></div>
+    <div class="balloon balloon5"></div>
+</body>
+</html>
