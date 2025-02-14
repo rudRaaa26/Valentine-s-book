@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Magic for Chaand</title>
+    <style>
+        /* Body & Background */
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: linear-gradient(to bottom, #ff4d6d, #ff7b9c);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Georgia', serif;
+        }
+
+        /* Starry Night */
+        .stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/stardust.png');
+            opacity: 0.5;
+            animation: twinkle 3s infinite alternate;
+        }
+
+        @keyframes twinkle {
+            0% { opacity: 0.3; }
+            100% { opacity: 0.8; }
+        }
+
+        /* Floating Hearts */
+        .heart {
+            position: absolute;
+            font-size: 50px;
+            color: red;
+            animation: floatHeart 3s infinite ease-in-out;
+        }
+
+        @keyframes floatHeart {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-30px); }
+            100% { transform: translateY(0); }
+        }
+
+        .heart1 { left: 15%; top: 20%; animation-delay: 1s; }
+        .heart2 { left: 50%; top: 40%; animation-delay: 2s; }
+        .heart3 { left: 80%; top: 30%; animation-delay: 3s; }
+
+        /* Floating Balloons */
+        .balloon {
+            position: absolute;
+            width: 60px;
+            height: 80px;
+            background-color: #ff3377;
+            border-radius: 50%;
+            animation: floatBalloon 6s infinite ease-in-out;
+        }
+
+        @keyframes floatBalloon {
+            0% { transform: translateY(100px); }
+            50% { transform: translateY(-200px); }
+            100% { transform: translateY(100px); }
+        }
+
+        .balloon1 { left: 10%; animation-delay: 1s; }
+        .balloon2 { left: 30%; animation-delay: 2s; }
+        .balloon3 { left: 50%; animation-delay: 3s; }
+        .balloon4 { left: 70%; animation-delay: 4s; }
+        .balloon5 { left: 90%; animation-delay: 5s; }
+
+        /* Cityscape */
+        .city {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 200px;
+            background: url('https://i.imgur.com/3ZQ3Zs7.png') repeat-x;
+            animation: moveCity 20s linear infinite;
+        }
+
+        @keyframes moveCity {
+            0% { background-position: 0; }
+            100% { background-position: -2000px; }
+        }
+
+        /* Flying Vintage Letter */
+        .letter-container {
+            position: absolute;
+            width: 320px;
+            height: 450px;
+            background: #ffefd5;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+            animation: flyLetter 5s infinite ease-in-out;
+            transform: rotate(-5deg);
+        }
+
+        @keyframes flyLetter {
+            0% { transform: translateY(0) rotate(-5deg); }
+            50% { transform: translateY(-30px) rotate(5deg); }
+            100% { transform: translateY(0) rotate(-5deg); }
+        }
+
+        /* Letter Text */
+        .letter-text {
+            font-size: 16px;
+            color: #5a3e2b;
+            line-height: 1.6;
+        }
+
+        /* Good Wishes */
+        .good-wishes {
+            position: absolute;
+            bottom: 60px;
+            font-size: 22px;
+            color: white;
+            font-weight: bold;
+            animation: glowText 3s infinite alternate;
+        }
+
+        @keyframes glowText {
+            0% { text-shadow: 0 0 5px white; }
+            100% { text-shadow: 0 0 15px white; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Twinkling Stars -->
+    <div class="stars"></div>
+
+    <!-- Floating Hearts -->
+    <div class="heart heart1">❤️</div>
+    <div class="heart heart2">❤️</div>
+    <div class="heart heart3">❤️</div>
+
+    <!-- Floating Balloons -->
+    <div class="balloon balloon1"></div>
+    <div class="balloon balloon2"></div>
+    <div class="balloon balloon3"></div>
+    <div class="balloon balloon4"></div>
+    <div class="balloon balloon5"></div>
+
+    <!-- Moving Cityscape -->
+    <div class="city"></div>
+
+    <!-- Flying Vintage Letter -->
+    <div class="letter-container">
+        <h2>💌 A Love Letter for You 💌</h2>
+        <div class="letter-text">
+            So, Miss Chaand <3 :)<br><br>
+            We first met on April 22, and slowly, a beautiful friendship started...<br><br>
+            You were the first girl I ever talked to this much. I could open up to you, and you did the same with me. And for that, I’m so grateful.<br><br>
+            And then, at the perfect time, we both confessed. And now, we’re here. We’ve had fights, we’ve had moments where it felt like this wouldn’t be easy—but we made it through.<br><br>
+            Thank you for making my life so freaking beautiful.<br><br>
+            I love you, forever. ❤️
+        </div>
+    </div>
+
+    <!-- Good Wishes -->
+    <div class="good-wishes">Wishing us a lifetime of love, laughter, and happiness! 💖</div>
+
+</body>
+</html>
